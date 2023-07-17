@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5099b17d5e.js"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>REGISTRATION FORM</title>
+  </head>
+  <body>
+    <nav>STUDENT REGISTERATION FORM</nav>
+    <div class="container1 container">
+      <div class="form">
+        <!-- NAME -->
+        <label for="name">Name</label>
+        <input type="text" id="name" class="input" placeholder="Enter full name"/>
+        <br>
+
+        <!-- EMAIL -->
+        <label for="name">Email</label>
+        <input type="text" id="email" class="input" placeholder="Enter email" />
+        <br>
+
+        <!-- PHONE -->
+        <label for="name">Phone</label>
+        <input type="text" id="phone" class="input" placeholder="Enter phone" />
+        <br>
+
+        <!-- BRANCH -->
+        <label for="name">Branch</label>
+        <input type="text" id="branch" class="input" placeholder="Enter branch"/>
+        <br>
+
+        <!-- IMAGE LINK -->
+        <label for="name">Image link</label>
+        <input type="text" id="imgLink" class="input" placeholder="Enter Image link"/>
+        <br>
+
+        <!-- GENDER -->
+        <label>Gender</label>
+        <div class="gender" id="gender">
+          <div>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <label>Skills</label>
+        <div class="skills" id="skills">
+            <div>
+              <input type="radio" name="skills" id="java" />
+              <label for="java">JAVA</label>
+            </div>
+            <div>
+              <input type="radio" name="skills" id="c++" />
+              <label for="c++">C++</label>
+            </div>
+            <div>
+              <input type="radio" name="skills" id="python" />
+              <label for="python">PYTHON</label>
+            </div>
+          </div>
+
+        <!-- SUBMIT CLEAR -->
+        <div class="btnContainer">
+          <button type="submit" id="register" onclick="submit()">SUBMIT</button>
+          <button type="submit" id="clear">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- div class to display -->
+    <div class="container2 container" id="listContainer">
+      <div class="title">REGISTERED STUDENTS LIST</div>
+    </div>
+
+  </body>
+
+  <script src="reg_form.js"></script>
+</html>

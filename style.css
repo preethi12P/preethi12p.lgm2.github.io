@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-image: url("");
+   background-repeat: repeat;
+   background-color:#bfbaf5;
+
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 1fr 2fr;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding: 0.7rem 0 0.4rem 0;
+    color: #461E52 ;
+    border-bottom: 1px solid #6d3a7d;
+    cursor: default;
+}
+
+.container {
+    padding: 5rem 2rem;
+}
+
+.input {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    padding: 0.1rem 0.3rem;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    background-color:#bfbaf5;
+    border: 1px solid #461E52;
+}
+
+.input:focus {
+    border: 2px solid var(--blue);
+}
+
+.container1 {
+    width: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form {
+    width: 20rem;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 31px;
+    background: linear-gradient(145deg, #eadbef, #464370);
+    box-shadow: 5px 5px 10px #464370,
+        -5px -5px 10px #7b789e;
+}
+
+.form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    position: relative;
+    width: 103%;
+    top: -0.1rem;
+}
+
+/* GENDER */
+.gender {
+    width: 18rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.6rem;
+}
+
+.gender div, .gender input {
+    user-select: none;
+    cursor: pointer;
+}
+
+.gender label {
+    cursor: pointer;
+    user-select: none;
+    padding: 0.3rem 0.5rem 0.3rem 0;
+}
+
+.gender input {
+    font-size: 7rem;
+    width: 50;
+    height: 50;
+    position: relative;
+    top: 0.08rem;
+}
+
+/* SKILLS */
+.skills {
+    width: 18rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.6rem;
+}
+
+.skills div, .skills input {
+    user-select: none;
+    cursor: pointer;
+}
+
+.skills label {
+    cursor: pointer;
+    user-select: none;
+    padding: 0.3rem 0.5rem 0.3rem 0;
+}
+
+.skills input {
+    font-size: 7rem;
+    width: 50;
+    height: 50;
+    position: relative;
+    top: 0.08rem;
+}
+
+
+.btnContainer {
+    width: 20.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.btnContainer button {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+#register {
+    border: 2px solid #aaa0ad;
+    background-color: #464370;
+    color: black;
+}
+
+#register:hover {
+    background-color: #aaa0ad;
+    color: black;
+}
+
+#clear {
+    border: 2px solid #aaa0ad;
+    background-color: #464370;
+    color: black;
+}
+
+#clear:hover {
+    background-color: #aaa0ad;
+    color: black;
+}
+
+/* GRID SIDE STYLES */
+.container2 {
+    width: 55vw;
+    padding-right: 1rem;
+    position: relative;
+    border-left: 1px solid #6d3a7d;
+}
+
+.container2 .title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    padding: 1rem 0;
+    color: #333333;
+}
+
+.container2 .title::before {
+    content: 'NO RECORDS';
+    position: absolute;
+    top: 6rem;
+    left:50%;
+    transform: translateX(-50%);
+    color: #6d3a7d !important;
+    z-index: 2;
+}
+
+.container2 ul {
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #eadbef, #464370);
+    box-shadow: 5px 5px 10px #464370,
+        -5px -5px 10px #7b789e;
+    padding: 1rem;
+    min-height: 7rem;
+    position: relative;
+    z-index: 3;
+}
+
+.container2 ul li {
+    list-style: none;
+    cursor: default;
+}
+
+.container2 div:nth-child(1) {
+    border-bottom: 1px solid #464370;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container2 ul li:nth-child(6) {
+    position: absolute;
+    width: 7rem;
+    top: 1.2rem;
+    right: 2.5rem;
+    overflow: hidden;
+    max-height: 9rem;
+    border-radius: 0.3rem;
+}
+
+.container2 ul li:nth-child(6) img {
+    width: 100%;
+    height: 100%;
+    min-height: 8rem;
+    background: url("");
+    background-size: cover;
+    background-position: center;
+}
+
+/* REMOVE BUTTON */
+.container2 ul li button {
+    border: 2px solid #aaa0ad;
+    background-color: #72718b;
+    color: black;
+    padding: 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.container2 ul button:hover {
+    background-color: #aaa0ad;
+    color: black;
+}
